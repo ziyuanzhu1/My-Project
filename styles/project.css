@@ -1,0 +1,27 @@
+h1 {
+    font-family: "Times New Roman", Times, serif;
+    color: rgb(2, 2, 88); 
+    text-align: center;
+}
+
+
+h2 {
+    font-size: 25px;
+    color:rgb(36, 2, 63);
+    text-argb(94, 23, 88)
+}
+
+
+p {
+    font-family:"serif";
+    font-size: 19.2px;
+    color: rgb(48, 2, 2); 
+    text-indent: 30px;
+
+}
+
+body {
+    background-color: rgb(238, 238, 238);
+    margin-right:120px;
+    margin-left:120px;
+}

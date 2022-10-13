@@ -10,11 +10,79 @@
 </head>
 <body>
     <ul>
-        <li><a href="#Home">Home</a></li>
+        <li><a href="index.html">Home</a></li>
         <li><a href="edm-music.html">EDM Music</a></li>
-        <li><a href="#Rave-Culture">Rave Culture</a></li>
-        <li><a href="AAPI-Community">EDM in the AAPI Community</a></li>
-        <li><a href="Recommendation">Recommendation</a></li>
+        <li><a href="rave-culture.html">Rave Culture</a></li>
+        <li><a href="aapi.html">EDM in the AAPI Community</a></li>
+        <li><a href="recommendations.html">Recommendations</a></li>
+        <li><a href="personal.html">Personal Experiences</a></li>
     </ul>
+
+    <h1>iHeart EDM</h1>
+
+
+
+    <form>
+         <fieldset>
+
+        <legend>Subscribe To Our Newsletter!</legend>
+        <div>
+        <form action="https://oim-apis.herokuapp.com/form" method = "post">
+           <label for="Name">Name:</label>
+            <input type = "text" name = "name" id="full name" placeholder="Enter your name here"/>
+        </div>
+    </br> 
+
+    <div>
+                <label for="Email">Email:</label>
+                <input type = "text" name = "email" id="email" placeholder="Enter your email here"/>
+    </div>     
+    
+</br>
+
+        <div>
+            <p>Are you new to EDM?</p>
+                <input type="radio" name="feedback" id = "yes" />
+                <label for="yes">Yes</label>
+        </br>
+                <input type="radio" name="feedback" id = "no" />
+            <label for="no">No</label>
+            
+        </div>
+    </br>
+        <div>
+            <label for="genre">Which EDM music genre are you interested in exploring?</label>
+       
+           <select name="genre-select" id="genre">
+               <option value="">Bass</option>
+               <option value="">Techno</option>
+               <option value="">Trance</option>
+               <option value="">Dubstep</option>
+               <option value="">Trap</option>
+               <option value="">Drum and Bass</option>
+               <option value="">Hardstyle</option>
+           </select>
+       </div>
+
+    </br>
+    <div>
+        <label for="comments">What else are you interested in learning more about?</label>
+    </div>
+    <div>
+    <textarea
+    id="comments"
+    name="comments"
+    rows="5"
+    cols="25"
+    placeholder=""></textarea><form>
+    </div>
+
+    <div>
+        <input type="submit" value="Submit"/>
+        <input type="reset" value="Reset"/>
+    </div>
+    
+</fieldset>
+</form>
 </body>
 </html>

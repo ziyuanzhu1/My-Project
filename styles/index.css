@@ -19,6 +19,7 @@ ul {
     text-decoration: none;
     font-size: 18.5px;
     font-family: "Audiowide";
+  
   }
   
   h1 {
@@ -28,7 +29,6 @@ ul {
   body {
     font-family: Arial, Helvetica, sans-serif;
     background-color: rgb(230, 166, 230);
-
   }
 
   li a:hover:not(.hover) {

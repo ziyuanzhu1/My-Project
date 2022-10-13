@@ -1,5 +1,6 @@
 h1 {
     font-family: 'Audiowide';
+    text-align: center;
 }
 
 h2 {
@@ -16,3 +17,4 @@ p {
     font-size: 15px;
     font-weight: none;
 }
+

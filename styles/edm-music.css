@@ -2,16 +2,15 @@ h1 {
     font-family: 'Audiowide';
 }
 
+h2 {
+    text-decoration: underline;
+    font-size: 20px;
+}
+
 body 
 {
     background-color: rgb(230, 166, 230);
 }
-
-
-ul {
-text-decoration: none;
-}
-
 
 p {
     font-size: 15px;

@@ -11,3 +11,9 @@ body
 ul {
 text-decoration: none;
 }
+
+
+p {
+    font-size: 15px;
+    font-weight: none;
+}

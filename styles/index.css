@@ -24,6 +24,7 @@ ul {
   
   h1 {
     font-family: "Audiowide";
+    text-align: center;
   }
   
   body {
@@ -41,20 +42,23 @@ legend {
     font-family: "Audiowide";
 }
   
-
-
-
-.button {
-  border: none;
-  color: rgb(255, 255, 255);
-  padding: 15px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  margin: 4px 2px;
-  cursor: pointer;
+td {
   text-align: center;
 }
 
-.buttonblue {background-color: #000000;}
+
+table, th, td {
+ border: 0px;
+ margin-right: auto;
+ margin-left: auto;
+ width: 80%;
+
+
+}
+table.center {
+ margin-top: 100px;
+ margin-left: 10%;
+ margin-right: 25%;
+
+}
+

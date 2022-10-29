@@ -25,6 +25,7 @@ ul {
   h1 {
     font-family: "Audiowide";
     text-align: center;
+    font-size: 40px;
   }
   
   body {
@@ -61,4 +62,5 @@ table.center {
  margin-right: 25%;
 
 }
+
 

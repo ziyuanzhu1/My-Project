@@ -47,6 +47,9 @@
         <td><a href="personal.html">Personal Experiences</a></td>
     </tr>
     <tr>
+        <td><a href="songs.html">Favorite Songs</a></td>
+    </tr>
+    <tr>
         <td><a href="sitemap.html">Sitemap</a></td>
     </tr>
 
@@ -54,5 +57,16 @@
 </body>
    </table>
 
+   <p>Click here to change the background!</p>
+    <script>
+      function changeBackgroundColor() {
+        const backGroundColor = ["green", "navy", "red", "yellow"];
+        const n = backGroundColor.length;
+        const randomIndex = Math.floor(Math.random() * n);
+        const body = document.querySelector("body");
+        body.style.backgroundColor = backGroundColor[randomIndex];
+      }
+      document.querySelector("p").onclick = changeBackgroundColor;
+    </script>
 
 </html>

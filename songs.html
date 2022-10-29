@@ -29,6 +29,7 @@
     </ul>
     
     <h1>My Favorite Songs</h1>
+    <p>Click here to change the background color!</p>
 
     <h2>1. Hung Up by Tritonal</h2>
     <iframe width="560" height="315" src="https://www.youtube.com/embed/vv_XzwAWhiM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -61,4 +62,15 @@
     <iframe width="560" height="315" src="https://www.youtube.com/embed/Ytz7qSH9QPI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 </body>
+
+    <script>
+      function changeBackgroundColor() {
+        const backGroundColor = ["green", "navy", "red", "yellow", "purple", "pink"];
+        const n = backGroundColor.length;
+        const randomIndex = Math.floor(Math.random() * n);
+        const body = document.querySelector("body");
+        body.style.backgroundColor = backGroundColor[randomIndex];
+      }
+      document.querySelector("p").onclick = changeBackgroundColor;
+    </script>
 </html>

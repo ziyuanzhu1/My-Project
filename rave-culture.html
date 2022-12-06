@@ -15,7 +15,7 @@
 
 <body>
     <ul>
-        <li><img src="images/logo.png" alt="logo" title="logo" height="70"/></li>
+        <li><img src="images/logo.png" alt="logo" title="ravepic" height="70"/></li>
         <li><a href="index.html">Home</a></li>
         <li><a href="edm-music.html">EDM Music</a></li>
         <li><a href="rave-culture.html">Rave Culture</a></li>
@@ -24,9 +24,14 @@
         <li><a href="songs.html">Favorite Songs</a></li>
         <li><a href="sitemap.html">Sitemap</a></li>
     </ul>
+
+
 </table>
     <h1>Rave Culture</h1>
-    <img src="images/culture.png" alt="Rave Culture" width="100%">
+    <div id="rave-pic">
+    </div>
+    
+    <button class="btn btn-warning" onclick="addPic()">Click Here to Add Picture</button>
     <h3>Origin</h3>
     <p>Raves began to emerge in the 1980’s as secret dance parties that usually 
         happened after-hours in metropolitan cities. During these humble beginnings, 
@@ -58,12 +63,25 @@
         is accompanied by the mantra, “Peace, Love, Unity, Respect.”</p>
     
 
-<script text="javascript">
+<script>
+function addPic() {
+  var image = document.createElement('img')
+  var div = document.getElementById('rave-pic');
+  image.src = ('https://www.nj.com/resizer/wHvtjGZdKljs7-K4SL-tGgZqW9I=/1280x0/smart/cloudfront-us-east-1.images.arcpublishing.com/advancelocal/FSAPTQCAHRAPNNQQJWXLZQKHSY.jpg');
+  div.appendChild(image);
 
-        let image_node = document.createElement('img');
-        img.addEventListener('click', () => {
-        img.parentNode.removeChild(img);
-      });   
+
+  let tags = document.getElementsByTagName('img');
+  for (let i = 0; i < tags.length; i++) {
+    tags[i].addEventListener("click", function() {
+
+      this.remove()
+
+    })
+
+  }
+}
+  
 
 </script>
 </body>
